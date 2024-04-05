@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 10px; */
+}
+
+body{
+    background-color: #394459;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 0rem  1.1rem 1.8rem 1.1rem;
+    background-color: #89a5d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+}
+
+.screen{
+    padding: 0.7rem 1.2rem;
+    margin-bottom: 1rem;
+    height: 6rem;
+    width: 96%;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #b7cdf8;
+    cursor: text;
+}
+.notification{
+    height: 1rem;
+    /* background-color: red; */
+    color: #303949;
+    margin: 1rem 0;
+}
+/* .inscreen{
+    
+} */
+
+.disp-result{
+    font-size: 1.1rem;
+    color: #6989c1;
+    width: 18rem;
+    height: 1.8rem;
+    overflow-x: scroll; 
+    text-overflow: ellipsis;
+    scrollbar-width: none; 
+}
+
+.disp-calcu{
+    font-size: 35px;
+    color: #303949;
+    display: flex;
+    width: 17.2rem;
+    height: 3.1rem;
+    direction: rtl;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: none;
+}
+.in_disp-calcu{
+    direction:ltr;
+}
+
+.buttons{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(5, 3.5rem);
+    grid-template-rows: 2.5rem 3.5rem 3.5rem 3.5rem 3.5rem;
+    
+}
+
+
+.inp-btn{
+    border: none;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #303949;
+    
+}
+
+.optr{
+    background-color: #6989c1;
+}
+
+.optr:hover{
+    background-color: #b7cdf8;
+}
+
+.num {
+    background-color: #b7cdf8;
+    font-weight: 500;
+}
+
+.num:hover{
+    background-color: #6989c1;
+}
+.clr{
+    grid-row: 1/3;
+    grid-column: 5/6;
+}
+.enter {
+    grid-column: 3/6;
+    background-color: #394459;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #a1bff7;
+}
+
+.enter:hover{
+    background-color: #b7cdf8;
+    color: #303949;
+}
+.row-1{
+    font-size: 0.9rem;
+    
+}

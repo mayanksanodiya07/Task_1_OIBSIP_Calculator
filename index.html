@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
+
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="notification"></div>
+        <div class="screen">
+            <div class="inscreen disp-result">0</div>
+            <div class="inscreen disp-calcu">
+                <div class="in_disp-calcu">0</div>
+            </div>
+        </div>
+        <div class="buttons">
+            
+            <input type="button" class="inp-btn row-1 optr" name="opnBrac" value="("
+            onclick='addScr("(")'>
+            <input type="button" class="inp-btn row-1 optr" name="clsBrac" value=")" 
+            onclick='addScr(")")'>
+            <input type="button" class="inp-btn row-1 optr ans" name="ans" value="ans"
+            onclick='addScr("ans")'>
+            <input type="button" class="inp-btn row-1 optr del" name="del" value="del"
+            onclick='del()'>
+            <input type="button" class="inp-btn row-1 optr clr" name="clr" value="clear" 
+            onclick='dispScr("")'>
+            
+            <input type="button" class="inp-btn num" name="one" value="1" onclick='addScr("1")'>
+            <input type="button" class="inp-btn num" name="two" value="2" onclick='addScr("2")'>
+            <input type="button" class="inp-btn num" name="three" value="3" onclick='addScr("3")'>
+            <input type="button" class="inp-btn optr" name="percent" value="%" onclick='addScr("%")'>
+            <!-- <input type="button" class="inp-btn optr" name="root" value="√" > -->
+
+            <input type="button" class="inp-btn num" name="four" value="4" onclick='addScr("4")'>
+            <input type="button" class="inp-btn num" name="five" value="5" onclick='addScr("5")'>
+            <input type="button" class="inp-btn num" name="six" value="6" onclick='addScr("6")'>
+            <input type="button" class="inp-btn optr" name="mul" value="x" onclick='addScr("*")'>
+            <input type="button" class="inp-btn optr" name="div" value="/" onclick='addScr("/")'>
+            
+            <input type="button" class="inp-btn num" name="seven" value="7" onclick='addScr("7")'>
+            <input type="button" class="inp-btn num" name="eight" value="8" onclick='addScr("8")'>
+            <input type="button" class="inp-btn num" name="nine" value="9" onclick='addScr("9")'>
+            <input type="button" class="inp-btn optr" name="plus" value="+" onclick='addScr("+")'>
+            <input type="button" class="inp-btn optr" name="minus" value="-" onclick='addScr("-")'>
+
+            <input type="button" class="inp-btn optr" name="point" value="." onclick='addScr(".")'>
+            <input type="button" class="inp-btn num" name="zero" value="0" onclick='addScr("0")'>
+            <!-- <input type="button" class="inp-btn optr" name="plusminus" value="±"> -->
+            <input type="button" class="inp-btn enter" name="enter" value="ENTER" 
+            onclick='eql()'>
+
+        </div>
+        <script src="script.js"></script> 
+    </div>
+</body>
+</html>
